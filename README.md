@@ -18,3 +18,69 @@
      - OAuth2 Client
    - 기타 라이브러리
      - Lombok
+
+### 디렉토리 구조
+```plain text
+src
+├─main
+│  ├─java.com.test.trend
+│  │   ├─auth
+│  │   ├─config
+│  │   ├─domain
+│  │   │  ├─account
+│  │   │  │  ├─controller
+│  │   │  │  ├─dto
+│  │   │  │  ├─entity
+│  │   │  │  ├─mapper
+│  │   │  │  ├─repository
+│  │   │  │  └─service
+│  │   │  │      └─util
+│  │   │  ├─analyze
+│  │   │  │  ├─controller
+│  │   │  │  ├─entity
+│  │   │  │  ├─model
+│  │   │  │  ├─repository
+│  │   │  │  ├─service
+│  │   │  │  └─util
+│  │   │  ├─crawling
+│  │   │  │  ├─batch
+│  │   │  │  ├─content
+│  │   │  │  ├─controller
+│  │   │  │  ├─freq
+│  │   │  │  ├─insight
+│  │   │  │  ├─interest
+│  │   │  │  ├─keyword
+│  │   │  │  ├─metric
+│  │   │  │  ├─score
+│  │   │  │  ├─service
+│  │   │  │  ├─targeturl
+│  │   │  │  └─util
+│  │   │  ├─payment
+│  │   │  │  ├─payment
+│  │   │  │  │  ├─api
+│  │   │  │  │  ├─dto
+│  │   │  │  │  │  └─toss
+│  │   │  │  │  ├─entity
+│  │   │  │  │  ├─mapper
+│  │   │  │  │  ├─repository
+│  │   │  │  │  └─service
+│  │   │  │  └─subscription
+│  │   │  │      ├─api
+│  │   │  │      ├─dto
+│  │   │  │      ├─entity
+│  │   │  │      ├─mapper
+│  │   │  │      ├─repository
+│  │   │  │      └─service
+│  │   │  └─s3presigned
+│  │   │      ├─controller
+│  │   │      ├─dto
+│  │   │      └─service
+│  │   ├─enums
+│  │   └─exception
+│  └─resources
+│      └─config
+└─test.java.com.test.trend
+   ├─repository
+   ├─restcontroller
+   └─service
+```
